@@ -1,0 +1,19 @@
+.choose-page{
+    padding: 10px;
+    .choose-page-header{
+        display: flex;
+        img{
+            width: 150px;
+        }
+        padding: 10px;
+        background-image: linear-gradient(to right,rgba(36, 37, 107, 0.438),rgba(54, 84, 109, 0.438));
+    }
+    p{
+        font-size: 28px;
+        font-weight: 500;
+        font-family: 'Lucida Sans';
+    }
+    main{
+        padding: 10px;
+    }
+}

@@ -1,0 +1,15 @@
+.without-redux{
+    display: grid;
+    grid-template-columns: 200px 1fr;
+    grid-template-rows: 150px min-content;
+    font-size: 16px;
+    min-width: 700px;
+    padding: 10px;
+}
+button{
+    padding:5px;
+    margin: 10px;
+    font-weight: 600;
+    font-size: 18px;
+}
+a{text-decoration: none;}

@@ -1,3 +1,13 @@
+
+:root{
+  --theme-default-bgimage:url(./wallpapers/linkoln2.jpg);
+  --color-text: white;
+  --a-color: white;
+  --a-color-visited: rgb(250, 204, 106);
+}
+html{ 
+  min-width: 550px;
+}
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
@@ -5,9 +15,53 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-image: var(--theme-default-bgimage);
+  background-repeat: repeat-y;
+  background-size: 100%;
+  color: var(--color-text);
+}
+
+a{
+  color: var(--a-color);
+}
+
+a:visited{
+  color: var(--a-color-visited);
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+body[data-theme='dark']{
+  --a-color:white;
+  --a-color-visited: rgb(253, 250, 201);
+  --color-text:hsl(0,0%,100%);
+  --theme-default-bgimage: url(./wallpapers/linkoln.jpg);
+  transition-duration: 2s;
+}
+
+body[data-theme='light']{
+  --a-color: black;
+  --a-color-visited: rgb(14, 9, 58);
+  --color-text:hsl(200,15%,0%);
+  --theme-default-bgimage: url(./wallpapers/light.jpg);
+  transition-duration: 2s;
+}
+
+body[data-theme='darker']{
+  --a-color: white;
+  --a-color-visited: rgb(230, 248, 182);
+  --color-text:hsl(0,0%,100%);
+  --theme-default-bgimage: url(./wallpapers/hunter.jpg);
+  transition-duration: 2s;
+}
+
+body[data-theme='lighter']{
+  --a-color:black;
+  --a-color-visited: rgb(58, 9, 47);
+  --color-text:hsl(200,15%,0%);
+  --theme-default-bgimage: url(./wallpapers/dwarf.jpg);
+  transition-duration: 2s;
 }

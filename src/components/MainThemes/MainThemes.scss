@@ -1,0 +1,50 @@
+.theme-switcher{
+    width: fit-content;
+    height: 65px;
+    padding: 10px;
+    position: absolute;
+    right: 10px;
+    top: 15px;
+    p{
+        font-size: 18px;
+        background-color: rgba(143, 84, 44, 0.26);
+        padding: 10px;
+    }
+    .main-themes:hover .open-theme-change{
+        width: 250px;
+        transition: all ease 2000ms;
+        background-image: linear-gradient(to right,rgb(105, 89, 80),rgb(165, 146, 211));
+        height: 100px;
+    }
+
+    .open-theme-change{
+        position: absolute;
+        right: 5px;
+        top: 5px;
+        width: 0px;
+        overflow: hidden;
+        display: flex;
+        justify-content: space-between;
+        padding: 5px;
+        .light-theme{
+            background-image: linear-gradient(to right,rgb(231, 189, 149),rgb(206, 186, 180));
+        }
+
+        .lighter-theme{
+            background-image: linear-gradient(to right,rgb(235, 228, 191),rgb(163, 140, 125));
+        }
+
+        .dark-theme{
+            background-image: linear-gradient(to right,rgb(85, 156, 165),rgb(17, 47, 82));
+        }
+
+        .darker-theme{
+            background-image: linear-gradient(to right,rgb(17, 32, 18),rgb(102, 36, 36));
+        }
+
+        .button-settheme{
+            width: 50px;
+        }
+    }
+}
+

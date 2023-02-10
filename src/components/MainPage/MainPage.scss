@@ -1,0 +1,47 @@
+$global--padding: 20px;
+$global--margin: 10px;
+$dark--bg-color: rgba(177, 169, 169, 0.13);
+
+.main-page{
+    padding: $global--padding;
+    margin: $global--margin;
+    .preloader{
+        position:absolute;
+        top: 95px;
+        left: 250px;
+        width: 50px;
+            img{
+                width: 50px;
+            }
+        opacity: 0;    
+        animation-name: preloader-main;
+        animation-duration: 2s;
+    }
+    text-align: center;
+}
+.main-page-header{
+    margin-bottom: $global--margin;
+    background-color: rgba(222, 212, 240, 0.342);
+    padding: $global--padding;
+    .header-menu{
+        display: flex;
+        div{
+            margin: 10px;
+        }
+    }
+    img{
+        width: 150px;
+    }
+}
+
+@keyframes preloader-main {
+    0%{
+        opacity: 100;
+    }
+    90%{
+        opacity: 100%;
+    }
+    100%{
+        opacity: 0;
+    }
+}

@@ -1,0 +1,14 @@
+$dark--bg-color: rgba(177, 169, 169, 0.13);
+.story{
+    a{
+        font-size: 20px;
+        font-family: 'Segoe UI';
+        font-weight: 500;
+    }
+    p{
+        font-size: 18px;
+    }
+    margin-top: 15px;
+    padding: 10px;
+    background-color: $dark--bg-color;
+}

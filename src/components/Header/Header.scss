@@ -1,0 +1,35 @@
+.Header{
+    grid-column: span 2;
+    display: flex;
+    background-color: rgba(90, 90, 223, 0.137);
+    margin-bottom: 10px;
+    min-width: 550px;
+}
+.buttons{
+    border: none;
+}
+.header-main{
+    display: flex;
+    border: none;
+    padding: 15px;
+    a{
+        margin: 5px;
+        padding: 5px;
+    }
+    img{
+        width: 120px;
+    }
+}
+.header-main>div{
+    border: none;
+}
+.header-main-elem{
+    padding: 4px;
+    margin: 4px;
+    height: fit-content;
+    background-color: rgb(119, 119, 139);
+    color: rgb(0, 0, 0);
+}
+.header-main-elem:hover{
+    background-color: rgb(86, 86, 145);
+}
